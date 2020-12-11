@@ -1,13 +1,19 @@
 {
   "type": "postgres",
-  "host": "localhost",
+  "host": "ec2-34-204-121-199.compute-1.amazonaws.com",
   "port": 5432,
-  "username": "postgres",
-  "password": "docker",
-  "database": "gostack_desafio06",
+  "username": "zspxonsrnyuasx",
+  "password": "131157df6da8e095d6fe33a66d2a4fcc1952a91cb9955f777bc9ccae67b98563",
+  "database": "d4ilocmcp55hub",
   "entities": ["./src/models/*.ts"],
   "migrations": ["./src/database/migrations/*.ts"],
   "cli": {
     "migrationsDir": "./src/database/migrations"
+  },
+  "ssl": true,
+  "extra": {
+    "ssl": {
+      "rejectUnauthorized": false
+    }
   }
 }
